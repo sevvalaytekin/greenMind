@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+   display:flex;
+   justify-content: space-between;
+   max-width: 1440px; /* İçerik en fazla bu kadar genişlesin */
+   margin: 0 auto;    /* Geniş ekranlarda header'ı ortalar */
+   align-items: center;
+   padding: 30px 0; /* Üst-Alt 30px, Sağ-Sol 0 */
+}
+
+.icons{
+    display:flex;
+    gap:48px;
+    align-items: center;
+
+}
+
+nav ul {
+    list-style: none; /* Noktalar burada yok edilir */
+    display: flex;    /* Yan yana burada dizilir */
+    gap: 48px;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    justify-content: flex-start;
+}
+
+nav a {
+    text-decoration: none; /* Çizgi burada silinir */
+    color: #333;           /* Renk burada değişir */
+}
+
+
+nav a.active {
+    color: #1E1E1E;
+    font-weight: 600;      /* Yazıyı biraz kalınlaştırır */
+}
+
+nav a.nav-link { 
+    color: #1E1E1E80;
+}
+
+@media (max-width: 720px) {
+  /* Ekran 720px'den küçük olduğunda çalışacak kodlar buraya gelir */
+  nav {
+    display: none; /* Orta menüyü tamamen kaldırır */
+  }
+
+ 
+}
