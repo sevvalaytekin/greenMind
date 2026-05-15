@@ -8,6 +8,7 @@ header {
    display:flex;
    justify-content: space-between;
    max-width: 1440px; /* İçerik en fazla bu kadar genişlesin */
+   width: 100%;       /* Ekran genişliğine göre genişlesin */
    margin: 0 auto;    /* Geniş ekranlarda header'ı ortalar */
    align-items: center;
    padding: 30px 0; /* Üst-Alt 30px, Sağ-Sol 0 */
@@ -54,3 +55,97 @@ nav a.nav-link {
 
  
 }
+
+/* Hero Section */
+.hero {
+  background-color: #c1dcdc;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+}
+
+.hero-title {
+  font-weight: 800;
+  font-size: 48px;
+}
+
+.stats-container {
+  display: flex;
+  gap: 50px;
+}
+
+.divider {
+  height: 48px;
+  border: 1px solid #000000;
+}
+
+.stat-number {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.stat-desc {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+
+.search-container {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 10px 15px; 
+  max-width: 450px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.search-container input {
+  flex: 1; /* Tüm boş alanı kaplaması için ↔️ */
+  border: none; /* Kenarlıkları kaldırır */
+  outline: none; /* Tıklandığında çıkan mavi çerçeveyi siler 🚫 */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+ 
+}
+
+/* Arama butonu */
+.search-btn {
+  background-color: #c1dcdc; 
+  border: none;
+  border-radius: 10px; 
+  padding: 10px;
+  cursor: pointer; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hero-image-area {
+  position: relative; /* Çerçeveyi belirledik */
+  height: 500px;      /* Alanın yüksekliği */
+  width:%100;
+}
+
+.hero-image-area img, .black-shape {
+  position: absolute; /* Elemanları serbest bıraktık */
+  bottom: 0;          /* Hepsini en alta gönderdik ⬇️ */
+}
+
+.black-shape { z-index: 1; } /* En arka katman */
+.img-pot  { z-index: 2; } /* Orta katman (Bitki) */
+.img-main   { z-index: 3; } /* En ön katman (Saksı) */
