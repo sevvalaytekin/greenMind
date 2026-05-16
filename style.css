@@ -250,3 +250,76 @@ nav a.nav-link {
     gap: 20px;
   }
 }
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto; /* Sayfayı ortalar */
+   align-items: center;
+   padding: 80px 0px; /* Üst-Alt 80px, Sağ-Sol 0px */
+}
+
+.header-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1E1E1E80;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width:430px;
+}
+
+.features-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    width: 100%;
+    align-items: center;
+}
+
+.card-text{
+    font-size: 18px;
+    font-weight: 500;
+    color: #1E1E1E80;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.future-icon    {
+   
+}
+
+@media (max-width: 500px) {
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
