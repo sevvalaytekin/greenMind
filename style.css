@@ -149,3 +149,104 @@ nav a.nav-link {
 .black-shape { z-index: 1; } /* En arka katman */
 .img-pot  { z-index: 2; } /* Orta katman (Bitki) */
 .img-main   { z-index: 3; } /* En ön katman (Saksı) */
+
+
+
+.best-selling-section {
+    display: flex;
+    justify-content: space-between; /* Aralarında eşit boşluk bırakır ↔️ */
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto; /* Sayfayı ortalar */
+    gap: 40px; /* Başlık ve kartlar arasındaki boşluk */
+    padding: 80px 0px; /* Üst-Alt 80px, Sağ-Sol 0px */
+
+}
+
+
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;  
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #1E1E1E80;
+    margin-bottom: 25px;
+}
+
+.see-more-btn {
+  background-color: #C1DCDC;
+   width:168px;
+   height:51px;
+   border-radius:8px;
+   border: none;
+   display: flex;
+   font-size: 15px;
+   font-weight: 400;
+    color: #000;
+   font-family: 'Poppins', sans-serif;
+   justify-content: center; /* yatay ortalar */
+   align-items: center;     /* dikey ortalar */
+   gap: 10px; /* Ok ile yazı arasındaki boşluk */
+}
+
+/* Ok resmi */
+.btn-arrow {
+  width: 24px;
+  height: 20px;
+}
+
+/* Ürün Kartları */
+.plant-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 436px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.plant-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+   
+}
+
+.plant-price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1E1E1E80;
+}
+
+.best-selling-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 256px;
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #1E1E1E80;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 500px) {
+  .best-selling-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
