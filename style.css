@@ -323,3 +323,94 @@ nav a.nav-link {
   }
 }
 
+
+
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto; /* Sayfayı ortalar */
+    padding: 80px 0px; /* Üst-Alt 80px, Sağ-Sol 0px */
+}
+
+
+.testimonials-header {
+    display: flex;
+    justify-content: space-between;
+    max-width:1440px;
+    width:100%;
+}
+
+.testimonials-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.testimonials-grid {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.testimonial-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1E1E1EBF;
+    font-family: 'Poppins', sans-serif;
+    width:700px;
+    text-align: center;
+}
+
+.user-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.user-job {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1E1E1E80;
+}
+
+.user-details-and-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:500px;
+}
+
+.user-info {
+    display: flex;
+    display:space-between;
+    align-items: center;  
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    background-color: #C1DCDC;
+    border-radius: 20px;
+    padding: 30px;
+
+}
+
+.testimonial-card-2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    background-color: #C1DCDC;
+
+    border-radius: 20px;
+    padding: 30px;
+
+
+}
